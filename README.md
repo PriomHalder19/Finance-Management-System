@@ -23,6 +23,7 @@ Standard library only (json, datetime)
 How to Run
 python finance_manager.py
 On Linux/macOS you may need python3 finance_manager.py.
+
 Menu
 
 ========== FINANCE MANAGER ==========
@@ -55,9 +56,7 @@ The budget is only compared to the current month's expenses.
 Over the limit:!! WARNING: You are OVER budget by Rs. 9,829.00!
 Set the budget to 0 (or not to set it at all), and no warnings are displayed.
 Default Categories
-
 Type Categories
-
 Income Salary, Pocket Money, Scholarship, Gift, Other
 Cost-Effective Food, Transportation, Reading Materials, Shopping, Invoices, Entertainment, Miscellaneous
 Customising
@@ -87,15 +86,21 @@ All new transactions will be assigned ID of highest existing ID + 1, so after de
 Dates are stored as YYYY-MM-DD text.
 To start fresh, delete finance_data.json.
 The file is in plain text format and unencrypted. If the data is sensitive please keep the file private.
+
 Sample Session
+
 Enter your choice (1-8): 4
+
 ------------- SUMMARY -------------
+
 Total income: Rs. 25,000.00
 Total expenses: Rs. 1,830.00
 Balance: Rs. 23,170.00
 This month (2026-09): income Rs. 25,000.00 expenses Rs. 1,830.00
 Monthly budget: Rs. 5,000.00 (Remaining: Rs. 3,170.00)
+
 ------- EXPENSES BY CATEGORY -------
+
 Shopping Rs. 1,200.00 65.6% #############
 Travel Rs. 450.00 24.6% ####
 Food Rs. 180.00 9.8% #
@@ -107,11 +112,15 @@ Input helpers money, getamount, getdate, choose_category
 Calculations currentmonth, total, checkbudget
 Options Menu addtransaction, viewtransactions, showsummary, categoryreport, setbudget, deletetransaction
 ENTRY POINT main (menu loop with dict of actions)
+
 Known Limitations
+
 No ability to delete and re-enter a single transaction.
 Amounts are stored as floats, not Decimal
 1 user, 1 currency No export/ import.
+
 Possible Improvements
+
 Edit transactions, category budgets, date range filter, CSV export, Recurring transactions, Chart, Automatically test.
 
 Author
